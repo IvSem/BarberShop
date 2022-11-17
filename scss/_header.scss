@@ -1,0 +1,97 @@
+:root {
+	--main-dark-color: #303030;
+	--main-light-color: #ffffff;
+	--main-text-color: #9da4bd;
+	--color-text-about: #555555;
+	--color-text-form: #757575;
+	--accent-color: #ff6c00;
+	--box-bg-color: #f7f7f7;
+	--trans: 0.3s ease-in-out;
+}
+
+.header {
+	background-color: #30303080;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+	}
+
+	&__actions {
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	&__logo {
+		margin: 0px 131px 0px 0px;
+	}
+
+	&__logo img {
+		max-width: 100%;
+		object-fit: cover;
+	}
+
+	&__list {
+		display: flex;
+		gap: 0 28px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.1em;
+		color: var(--main-light-color);
+		transition: var(--trans);
+	}
+	&__link:hover {
+		cursor: pointer;
+		color: var(--accent-color);
+	}
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	&__tel {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.1em;
+		color: var(--main-light-color);
+		transition: var(--trans);
+		// margin: 0px 43px 0px 0px;
+	}
+	&__tel:hover {
+		cursor: pointer;
+		color: var(--accent-color);
+	}
+
+	&__button {
+	}
+}
+
+.button {
+	border: 1px solid #ff6c00;
+	border-radius: 25px;
+	padding: 12px 20px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: var(--main-light-color);
+	transition: var(--trans);
+	background-color: inherit;
+}
+.button:hover {
+	cursor: pointer;
+	background-color: var(--accent-color);
+}

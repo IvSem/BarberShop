@@ -1,0 +1,36 @@
+/* Подключаем шрифты(берем их с собой) */
+/* &display=swap&subset=cyrillic-ext */
+:root {
+	--main-dark-color: #303030;
+	--main-light-color: #ffffff;
+	--main-text-color: #9da4bd;
+	--color-text-about: #555555;
+	--color-text-form: #757575;
+	--accent-color: #ff6c00;
+	--box-bg-color: #f7f7f7;
+	--trans: 0.3s ease-in-out;
+}
+
+@import "_reset";
+@import "_header";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
+body {
+	font-family: "Open Sans", sans-serif;
+
+	// font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding: 0px 15px 0px 15px;
+	margin: 0 auto;
+}
+main {
+	flex: 1 1 auto;
+}
