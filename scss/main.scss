@@ -10,10 +10,11 @@
 	--box-bg-color: #f7f7f7;
 	--trans: 0.3s ease-in-out;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
 @import "_reset";
 @import "_header";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
+@import "_hero";
+
 body {
 	font-family: "Open Sans", sans-serif;
 
