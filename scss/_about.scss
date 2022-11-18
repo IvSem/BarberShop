@@ -1,0 +1,54 @@
+.about {
+	padding: 120px 0px 120px 0px;
+	&__container {
+		display: flex;
+	}
+
+	&__icon {
+		flex: 0 1 50%;
+	}
+
+	&__content {
+		flex: 0 1 50%;
+		max-width: 470px;
+	}
+
+	&__text {
+	}
+
+	&__desr {
+		font-size: 14px;
+		line-height: 1.86;
+		letter-spacing: 0.02em;
+		color: #555555;
+		padding: 30px 0px 42px 0px;
+	}
+
+	&__btn {
+		color: var(--main-dark-color);
+	}
+}
+
+.icon {
+	&__list {
+		margin-right: 30px;
+		gap: 0 30px;
+		display: flex;
+	}
+
+	&__item {
+	}
+}
+
+.block-text {
+	&__sub-title {
+	}
+
+	&__title {
+		&_black {
+		}
+	}
+
+	&__text {
+	}
+}

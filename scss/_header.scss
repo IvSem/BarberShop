@@ -15,6 +15,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	z-index: 500;
 
 	&__container {
 		display: flex;
@@ -95,6 +96,7 @@
 	color: var(--main-light-color);
 	transition: var(--trans);
 	background-color: inherit;
+	display: inline-block;
 }
 .button:hover {
 	cursor: pointer;

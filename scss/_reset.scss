@@ -19,7 +19,9 @@ li {
 }
 
 img {
-	// vertical-align: top;
+	width: 100%;
+	vertical-align: top;
+	object-fit: cover;
 }
 
 h1,
