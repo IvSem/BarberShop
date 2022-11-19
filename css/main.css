@@ -306,6 +306,9 @@ div.hero__container {
   }
 }
 @media (max-width: 767.98px) {
+  .header {
+    padding: 0;
+  }
   .menu__body {
     position: fixed;
     top: 0;
