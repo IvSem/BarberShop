@@ -290,7 +290,6 @@ div.hero__container {
   .close-icon-menu::before {
     content: "";
     display: inline-block;
-    width: 30px;
     height: 35px;
     background: url("../img/header/button/close.svg") center/100% no-repeat;
   }
@@ -301,6 +300,9 @@ div.hero__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header:target .close-icon-menu .header {
+    padding-top: 200px;
   }
 }
 @media (max-width: 767.98px) {
@@ -360,9 +362,6 @@ div.hero__container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 24px;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -372,7 +371,6 @@ div.hero__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
     color: var(--main-dark-color);
     font-size: 18px;
   }
