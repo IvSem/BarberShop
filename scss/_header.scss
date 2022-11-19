@@ -19,8 +19,6 @@
 
 	&__container {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
 	}
 
 	&__menu {
@@ -32,21 +30,24 @@
 
 .menu {
 	display: flex;
-	align-items: center;
-	flex: 1 1 auto;
+	flex: 1 0 auto;
 	&__logo {
-		margin: 0px 131px 0px 0px;
+		// flex: 0 0 calc((200 / 1170) * 100%);
+		// margin-right: calc(10px + (43 - 10) * ((100vw - 768px) / (1600 - 768)));
 	}
 
 	&__logo img {
+		max-width: 100%;
 	}
 
 	&__list {
 		display: flex;
+		align-items: center;
 		gap: 0 30px;
 	}
 
 	&__item {
+		display: flex;
 	}
 
 	&__link {
@@ -64,6 +65,9 @@
 }
 
 .actions {
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
 	&__tel {
 		font-weight: 600;
 		font-size: 12px;
@@ -71,7 +75,8 @@
 		letter-spacing: 0.1em;
 		color: var(--main-light-color);
 		transition: var(--trans);
-		margin: 0px 43px 0px 0px;
+		// margin: 0px 43px 0px 0px;
+		margin-right: calc(10px + (43 - 10) * ((100vw - 768px) / (1600 - 768)));
 	}
 	&__tel:hover {
 		cursor: pointer;
@@ -79,6 +84,6 @@
 	}
 
 	&__button {
-		margin: 0px 32px 0px 0px;
+		margin-right: calc(0px + (20 - 0) * ((100vw - 768px) / (1600 - 768)));
 	}
 }
