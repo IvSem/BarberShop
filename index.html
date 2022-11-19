@@ -32,11 +32,21 @@
 							</li>
 						</ul>
 					</nav>
+
+					<nav class="header__contacts contacts">
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<a href="tel:+380441111111" class="actions__tel"
+									>+38 044 111 11 11</a
+								>
+							</li>
+						</ul>
+					</nav>
+
 					<div class="header__actions actions">
-						<a href="tel:+380441111111" class="actions__tel"
-							>+38 044 111 11 11</a
-						>
-						<a href="" class="actions__button button"> Online-booking </a>
+						<div>
+							<a href="" class="actions__button button"> Online-booking </a>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -72,7 +82,7 @@
 									A hair salon for men in Kyiv
 								</p>
 								<h1 class="block-text__title block-text__title_fz">
-									<span> BarberShop</spa>
+									<span> BarberShop</span>
 								</h1>
 								<p class="block-text__text">
 									We are experts in trendy men’s haircuts. We work quickly,
@@ -91,22 +101,36 @@
 						<div class="about__icon icon">
 							<ul class="icon__list">
 								<li class="icon__item">
-									<img src="./img/main/about/01.jpg" alt="boroda" />
+									<picture>
+										<source
+											media="(max-width: 767.99px)"
+											srcset="./img/main/about/img-1.jpg"
+										/>
+
+										<img src="./img/main/about/01.jpg" alt="boroda" />
+									</picture>
 								</li>
 								<li class="icon__item">
-									<img src="./img/main/about/02.jpg" alt="boroda" />
+									<picture>
+										<source
+											media="(max-width: 767.99px)"
+											srcset="./img/main/about/img-2.jpg"
+										/>
+
+										<img src="./img/main/about/02.jpg" alt="boroda" />
+									</picture>
 								</li>
 							</ul>
 						</div>
 						<div class="about__content">
-							<div class="about__text-block block-text">
+							<div class="about__text block-text">
 								<p class="block-text__sub-title block-text__sub-title_black">
 									<span>About</span>
 								</p>
 								<h2 class="block-text__title block-text__title_black">
 									<span>Best Barbershop in your city</span>
 								</h2>
-								<p class="block-text__text">
+								<p class="block-text__text block-text__text_black">
 									If you want to add more confidence to your image, you should
 									definitely visit us.
 								</p>

@@ -33,13 +33,12 @@
 .menu {
 	display: flex;
 	align-items: center;
+	flex: 1 1 auto;
 	&__logo {
 		margin: 0px 131px 0px 0px;
 	}
 
 	&__logo img {
-		max-width: 100%;
-		object-fit: cover;
 	}
 
 	&__list {
@@ -82,23 +81,4 @@
 	&__button {
 		margin: 0px 32px 0px 0px;
 	}
-}
-
-.button {
-	border: 1px solid #ff6c00;
-	border-radius: 25px;
-	padding: 12px 20px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.09em;
-	text-transform: uppercase;
-	color: var(--main-light-color);
-	transition: var(--trans);
-	background-color: inherit;
-	display: inline-block;
-}
-.button:hover {
-	cursor: pointer;
-	background-color: var(--accent-color);
 }
