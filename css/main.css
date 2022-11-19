@@ -279,10 +279,10 @@ div.hero__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0px 60px 0px 20px;
+    margin: 0px 30px 0px 20px;
   }
   .icon-menu {
-    background: url("../img/header/button/open.svg") center/130% no-repeat;
+    background: url("../img/header/button/open.svg") center/100% no-repeat;
   }
   .close-icon-menu {
     display: none;
@@ -292,7 +292,7 @@ div.hero__container {
     display: inline-block;
     width: 30px;
     height: 35px;
-    background: url("../img/header/button/close.svg") center/130% no-repeat;
+    background: url("../img/header/button/close.svg") center/100% no-repeat;
   }
   .header:target .icon-menu {
     display: none;
@@ -323,7 +323,7 @@ div.hero__container {
     top: 0;
     right: 0;
     width: 80%;
-    height: 80px;
+    height: 60px;
     background-color: #ffffff;
     z-index: 2;
     -webkit-animation: befo 0.3s ease-in-out forwards;
@@ -352,17 +352,18 @@ div.hero__container {
     right: 0;
   }
   .menu__list {
+    padding: 40px 0px 0px 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 15px;
+    gap: 24px;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -372,8 +373,8 @@ div.hero__container {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    color: #2a2a2a;
-    font-size: 20px;
+    color: var(--main-dark-color);
+    font-size: 18px;
   }
   .menu__item {
     position: relative;
