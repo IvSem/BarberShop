@@ -41,7 +41,7 @@
 		}
 
 		&_fz span {
-			font-size: 72px;
+			font-size: calc(28px + (72 - 28) * ((100vw - 320px) / (1600 - 320)));
 		}
 
 		&:not(:last-child) {
