@@ -11,27 +11,29 @@
 	<body>
 		<div class="wrapper">
 			<!-- ?Header -->
-			<header class="header">
-				<div class="header__container">
-					<nav class="header__menu menu">
-						<ul class="menu__list">
-							<a class="menu__logo" href="./index.html"
-								><img src="./img/header/logo/logo.svg" alt="logo"
-							/></a>
-							<li class="menu__item">
-								<a href="" class="menu__link">About</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Services and prices</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Barbers</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Contacts</a>
-							</li>
-						</ul>
-					</nav>
+			<header id="open" class="header">
+				<div id="close" class="header__container">
+					<a class="menu__logo" href="./index.html"
+						><img src="./img/header/logo/logo.svg" alt="logo"
+					/></a>
+					<div class="header__menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Services and prices</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Barbers</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Contacts</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 
 					<div class="header__actions actions">
 						<a href="tel:+380441111111" class="actions__tel"
@@ -39,6 +41,10 @@
 						>
 
 						<a href="" class="actions__button button"> Online-booking </a>
+					</div>
+					<div class="header__button">
+						<a href="#open" class="icon-menu"> </a>
+						<a href="#close" class="close-icon-menu"> </a>
 					</div>
 				</div>
 			</header>
