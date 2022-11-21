@@ -97,6 +97,9 @@ body {
 .block-text__title_fz span {
   font-size: calc(28px + 44 * (100vw - 320px) / 1280);
 }
+.block-text__title_fzb span {
+  font-size: calc(40px + 2 * (100vw - 320px) / 1280);
+}
 .block-text__title:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -653,6 +656,17 @@ div.hero__container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1019.99px) {
+  .cards-services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background-image: -o-linear-gradient(top, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
 .cards-services__list-left {
   padding: 30px 20px;
   -webkit-box-flex: 0;
@@ -672,6 +686,12 @@ div.hero__container {
   background-image: -o-linear-gradient(top, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
+@media (max-width: 1019.99px) {
+  .cards-services__list-left {
+    padding: 30px 40px 20px 40px;
+    background-image: none;
+  }
+}
 .cards-services__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,7 +703,7 @@ div.hero__container {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw - 320px) / 1280);
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
@@ -693,7 +713,12 @@ div.hero__container {
 }
 .cards-services__serv {
   max-width: 256px;
-  padding-right: 12px;
+  padding-right: calc(3px + 9 * (100vw - 320px) / 1280);
+}
+@media (max-width: 479.99px) {
+  .cards-services__serv {
+    max-width: 200px;
+  }
 }
 .cards-services__decor {
   -webkit-box-flex: 1;
@@ -710,7 +735,7 @@ div.hero__container {
   background: rgba(157, 164, 189, 0.12);
 }
 .cards-services__price {
-  padding-left: 12px;
+  padding-left: calc(3px + 9 * (100vw - 320px) / 1280);
 }
 .cards-services__list-right {
   padding: 30px 20px;
@@ -730,6 +755,12 @@ div.hero__container {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
   background-image: -o-linear-gradient(top, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+@media (max-width: 1019.99px) {
+  .cards-services__list-right {
+    padding: 0px 40px 20px 40px;
+    background-image: none;
+  }
 }
 
 body {
@@ -756,15 +787,15 @@ body {
 
 @media (max-width: 767.99px) {
   [class*=__container] {
-    max-width: 795px;
-    padding: 0px 39px 0px 26px;
+    max-width: 763px;
+    padding: 0px 30px 0px 30px;
     margin: 0 auto;
   }
 }
 @media (max-width: 479.99px) {
   [class*=__container] {
-    max-width: 448px;
-    padding: 0px 31px 0px 31px;
+    max-width: 478px;
+    padding: 0px 30px 0px 30px;
     margin: 0 auto;
   }
 }

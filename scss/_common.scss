@@ -43,6 +43,9 @@
 		&_fz span {
 			font-size: calc(28px + (72 - 28) * ((100vw - 320px) / (1600 - 320)));
 		}
+		&_fzb span {
+			font-size: calc(40px + (42 - 40) * ((100vw - 320px) / (1600 - 320)));
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 20px;
