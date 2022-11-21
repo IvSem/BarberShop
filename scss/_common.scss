@@ -30,7 +30,7 @@
 	}
 
 	&__title {
-		font-size: calc(28px + (42 - 28) * ((100vw - 320px) / (1600 - 320)));
+		font-size: calc(28px + (42 - 28) * ((100vw - 768px) / (1600 - 768)));
 		font-weight: 700;
 		line-height: 1.18;
 		letter-spacing: 0.05em;
@@ -54,7 +54,16 @@
 		line-height: 1.67;
 		letter-spacing: 0.02em;
 		color: var(--main-text-color);
-		max-width: 375px;
+
+		@media (max-width: 767.99px) {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 30px;
+
+			letter-spacing: 0.02em;
+			color: #555555;
+		}
 
 		&_black {
 			color: var(--main-dark-color);
