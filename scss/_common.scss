@@ -30,21 +30,34 @@
 	}
 
 	&__title {
+		font-family: Raleway;
 		font-size: calc(28px + (42 - 28) * ((100vw - 768px) / (1600 - 768)));
 		font-weight: 700;
 		line-height: 1.18;
 		letter-spacing: 0.05em;
 		color: var(--main-light-color);
+		@media (max-width: 479.99px) {
+			font-size: 42px;
+		}
 
 		&_black span {
 			color: var(--main-dark-color);
 		}
 
 		&_fz span {
-			font-size: calc(28px + (72 - 28) * ((100vw - 320px) / (1600 - 320)));
+			font-size: calc(48px + (72 - 48) * ((100vw - 480px) / (1600 - 480)));
 		}
 		&_fzb span {
 			font-size: calc(40px + (42 - 40) * ((100vw - 320px) / (1600 - 320)));
+		}
+		&_mw {
+			max-width: 430px;
+		}
+		&_about-fz {
+			@media (max-width: 479.99px) {
+				font-size: 28px;
+				max-width: 306px;
+			}
 		}
 
 		&:not(:last-child) {
