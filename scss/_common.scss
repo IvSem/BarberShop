@@ -87,7 +87,7 @@
 	color: var(--main-light-color);
 	transition: var(--trans);
 	background-color: inherit;
-	display: inline-flex;
+	display: inline-block;
 }
 .button:hover {
 	cursor: pointer;
