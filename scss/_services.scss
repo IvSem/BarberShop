@@ -13,6 +13,9 @@
 	&__button {
 		text-align: center;
 		padding: 44px 0px 120px 0px;
+		@media (max-width: 319.99px) {
+			padding: 44px 0px 100px 0px;
+		}
 	}
 }
 

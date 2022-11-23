@@ -100,11 +100,21 @@ body {
 .block-text__title_black span {
   color: var(--main-dark-color);
 }
+@media (max-width: 319.99px) {
+  .block-text__title_black span {
+    font-size: 40px;
+  }
+}
 .block-text__title_fz span {
   font-size: calc(48px + 24 * (100vw - 480px) / 1120);
 }
 .block-text__title_fzb span {
   font-size: calc(40px + 2 * (100vw - 320px) / 1280);
+}
+@media (max-width: 319.99px) {
+  .block-text__title_fzb span {
+    font-size: 40px;
+  }
 }
 .block-text__title_mw {
   max-width: 430px;
@@ -662,6 +672,11 @@ div.hero__container {
   text-align: center;
   padding: 44px 0px 120px 0px;
 }
+@media (max-width: 319.99px) {
+  .services__button {
+    padding: 44px 0px 100px 0px;
+  }
+}
 
 .cards-services {
   display: -webkit-box;
@@ -851,11 +866,23 @@ div.hero__container {
             justify-content: flex-end;
   }
 }
+@media (max-width: 410.99px) {
+  .features {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .features__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+@media (max-width: 470.99px) {
+  .features__body {
+    gap: 15px;
+  }
 }
 .features__list-left {
   display: -webkit-box;
@@ -867,6 +894,11 @@ div.hero__container {
           flex-direction: column;
   gap: 30px;
 }
+@media (max-width: 470.99px) {
+  .features__list-left {
+    gap: 15px;
+  }
+}
 .features__list-right {
   padding-top: 35px;
   display: -webkit-box;
@@ -877,6 +909,11 @@ div.hero__container {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+}
+@media (max-width: 470.99px) {
+  .features__list-right {
+    gap: 15px;
+  }
 }
 .features__item {
   max-width: 170px;
@@ -901,6 +938,16 @@ div.hero__container {
   .features__item {
     max-width: 210px;
     padding: 20px 44px;
+  }
+}
+@media (max-width: 470.99px) {
+  .features__item {
+    max-width: 170px;
+  }
+}
+@media (max-width: 410.99px) {
+  .features__item {
+    max-width: 130px;
   }
 }
 .features__title {
@@ -974,6 +1021,13 @@ body {
   [class*=__container] {
     max-width: 478px;
     padding: 0px 30px 0px 30px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 319.99px) {
+  [class*=__container] {
+    max-width: none;
+    padding: 0px 15px 0px 15px;
     margin: 0 auto;
   }
 }

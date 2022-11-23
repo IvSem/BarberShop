@@ -42,6 +42,9 @@
 
 		&_black span {
 			color: var(--main-dark-color);
+			@media (max-width: 319.99px) {
+				font-size: 40px;
+			}
 		}
 
 		&_fz span {
@@ -49,6 +52,9 @@
 		}
 		&_fzb span {
 			font-size: calc(40px + (42 - 40) * ((100vw - 320px) / (1600 - 320)));
+			@media (max-width: 319.99px) {
+				font-size: 40px;
+			}
 		}
 		&_mw {
 			max-width: 430px;
