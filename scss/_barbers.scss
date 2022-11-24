@@ -1,0 +1,127 @@
+.barbers {
+	background-color: var(--box-bg-color);
+	// .barbers__container
+	&__container {
+	}
+
+	// .barbers__body
+	&__body {
+		padding: 120px 0px 120px 0px;
+		@media (max-width: 785.99px) {
+			padding-left: 120px;
+		}
+	}
+
+	// .barbers__content
+	&__content {
+	}
+
+	// .barbers__text
+	&__text {
+		padding-bottom: 44px;
+	}
+
+	// .barbers__cards
+	&__cards {
+	}
+}
+
+.cards-barbers {
+	// .cards-barbers__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		row-gap: 30px;
+		// @media (max-width: 1200px) {
+		// 	row-gap: 64px;
+		// 	flex-direction: column;
+		// }
+	}
+
+	// .cards-barbers__item
+	&__item {
+		padding: 0 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 1 1 33.333%;
+		@media (max-width: 785.99px) {
+			flex: 0 1 480px;
+		}
+	}
+
+	// .cards-barbers__icon
+	&__icon {
+		min-width: 370px;
+		@media (max-width: 785.99px) {
+			min-width: 480px;
+		}
+		@media (max-width: 534.99px) {
+			min-width: auto;
+		}
+
+		& img {
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+		margin-bottom: 30px;
+	}
+
+	// .cards-barbers__title
+	&__title {
+		font-size: 18px;
+		line-height: 1.38;
+		letter-spacing: 0.02em;
+		color: var(--main-dark-color);
+		margin-bottom: 8px;
+	}
+
+	// .cards-barbers__text
+	&__text {
+		font-size: 14px;
+		line-height: 1.36;
+		letter-spacing: 0.02em;
+		color: var(--accent-color);
+		margin-bottom: 30px;
+	}
+}
+
+.social-list {
+	display: flex;
+	gap: 0 10px;
+
+	// .social-list__item
+	&__item {
+		&:hover .social-list__icon {
+			animation: zoomi 0.3s ease forwards;
+			@keyframes zoomi {
+				0% {
+					transform: scale(0);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+			color: var(--accent-color);
+		}
+	}
+
+	// .social-list__link
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 44px;
+		height: 44px;
+		background-color: var(--main-light-color);
+	}
+
+	// .social-list__icon
+	&__icon {
+		transition: all 0.3s ease-in-out;
+		color: var(--main-dark-color);
+	}
+}
