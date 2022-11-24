@@ -8,7 +8,7 @@
 	&__body {
 		padding: 120px 0px 120px 0px;
 		@media (max-width: 785.99px) {
-			padding-left: 120px;
+			padding-left: calc(1px + (120 - 1) * ((100vw - 320px) / (768 - 320)));
 		}
 	}
 
@@ -33,10 +33,6 @@
 		flex-wrap: wrap;
 		margin: 0 -15px;
 		row-gap: 30px;
-		// @media (max-width: 1200px) {
-		// 	row-gap: 64px;
-		// 	flex-direction: column;
-		// }
 	}
 
 	// .cards-barbers__item
@@ -45,7 +41,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		flex: 1 1 33.333%;
+		flex: 1 1 calc(33.333% - 15px);
 		@media (max-width: 785.99px) {
 			flex: 0 1 480px;
 		}
@@ -57,8 +53,8 @@
 		@media (max-width: 785.99px) {
 			min-width: 480px;
 		}
-		@media (max-width: 534.99px) {
-			min-width: auto;
+		@media (max-width: 623.99px) {
+			min-width: 100%;
 		}
 
 		& img {

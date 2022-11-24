@@ -1,0 +1,41 @@
+.portfolio {
+	padding: 120px 0px 120px 0px;
+	// .portfolio__container
+	&__container {
+	}
+
+	// .portfolio__content
+	&__content {
+	}
+
+	// .portfolio__text
+	&__text {
+		padding-bottom: 44px;
+	}
+
+	// .portfolio__icon
+	&__icon {
+	}
+}
+
+.icon-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 30px;
+	margin: 0 -15px;
+	// .icon-list__item
+	&__item {
+		flex: 1 1 calc(25% - 30px);
+		padding: 0px 15px;
+		min-width: 300px;
+	}
+
+	// .icon-list__image
+	&__image {
+	}
+	&__image img {
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
