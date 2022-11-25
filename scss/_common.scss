@@ -91,6 +91,9 @@
 			letter-spacing: 0.02em;
 			color: #555555;
 		}
+		&_color {
+			color: var(--main-text-color);
+		}
 
 		&_black {
 			color: var(--main-dark-color);
