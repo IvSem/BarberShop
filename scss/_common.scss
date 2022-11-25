@@ -6,7 +6,7 @@
 		font-size: 12px;
 		line-height: 1.36;
 		text-transform: uppercase;
-		color: rgba(157, 164, 189, 0.6);
+		color: rgba(157, 164, 189, 0.4);
 		display: flex;
 		align-items: center;
 		gap: 20px;
@@ -24,6 +24,11 @@
 			}
 			color: var(--main-dark-color);
 		}
+
+		&_colw {
+			color: var(--main-light-color);
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
@@ -110,6 +115,7 @@
 	transition: var(--trans);
 	background-color: inherit;
 	display: inline-block;
+	min-width: 160px;
 }
 .button:hover {
 	cursor: pointer;
