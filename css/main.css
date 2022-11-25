@@ -535,8 +535,6 @@ div.hero__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 27px 0px 0px 40px;
   gap: 15px 40px;
 }
@@ -549,6 +547,8 @@ div.hero__container {
           transform: rotate(-90deg) translate(0, 100%);
 }
 .social__list_pading {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
 }
 .social__item {
@@ -575,9 +575,6 @@ div.hero__container {
 }
 .social__link:hover {
   cursor: pointer;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
   color: var(--accent-color);
 }
 
